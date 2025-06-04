@@ -1,0 +1,28 @@
+.header {
+    width: 98%;
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+    gap: 150px;
+    height: 50px;
+    padding-left: 2%;
+    background-color: var(--light-color);
+}
+
+.header ul {
+    display: flex;
+    gap: 30px;
+    padding: 0 5px 0 5px;
+    list-style: none;
+}
+
+.header ul li a {
+    color: var(--dark-color);
+    text-decoration: none;
+    user-select: none;
+}
+
+.header > nav > ul > li > a.active {
+    color: var(--primary-color);
+    cursor: default;
+}
