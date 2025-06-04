@@ -1,22 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8">
-  <title>Sanjeevs's Portfolio</title>
-</head>
+    <!--CSS Styles -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
 
-<body>
-  <h1>SAnjeev's Portfolio</h1>
-  <h2>I'm a Web Developer</h2>
-  <hr />
-  <h3><a href="./public/movie-ranking.html">Movie Ranking Project</a></h3>
-  <img src="./assets/images/movie-ranking.png" height="200" alt="movie ranking project preview"/>
-  <h3><a href="./public/birthday-invite.html">Birthday Invite Project</a></h3>
-  <img src="./assets/images/birthday-invite.png" height="200" alt="birthday invite project preview"/>
-  <hr />
-  <a href="./public/about.html">About Me</a>
-  <a href="./public/contact.html">Contact Me</a>
-</body>
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/icons/favicon-32x32.png"
+    />
 
+    <!-- Animate CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Jane Doe | Web Developer</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <h1>Sanjeev Bhardwaj</h1>
+      <ul class="navigation">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="burger-menu" id="burger-menu">
+        <ion-icon class="bars" name="menu-outline"></ion-icon>
+        <!-- <ion-icon class="times" name="close-outline"></ion-icon> -->
+      </button>
+    </nav>
+    
+    <p> 0024 </p>
+
+    <!-- Hero Section -->
+    <section class="hero" id="about">
+      <img
+        src="assets/images/wfh_1.svg"
+        alt="jane-doe"
+        loading="lazy"
+        class="hero-img"
+      />
+      <div class="bio animate__animated animate__shakeX">
+        <h2 class="bio-title">About Me</h2>
+        <p class="bio-text">
+         Motivated Computer Engineering student with strong problem-solving skills and experience in Java, C/C++, and front-end development. Built multiple academic projects using Spring Boot, HTML/CSS, and Git. Seeking a software development internship to contribute to real-world agile teams and grow technically.
+        </p>
+      </div>
+    </section>
+
+    <!-- More about -->
+    <section class="more-about">
+      <h2>More About Me</h2>
+      <p>
+        Motivated and detail-oriented Computer Engineering student with strong analytical and problem-solving skills, and hands-on experience in Java, C/C++, and modern front-end technologies such as HTML, CSS, Bootstrap, and JavaScript. Experienced in building academic projects that simulate real-world applications, 
+        including web-based platforms developed using Spring Boot and version-controlled via Git and GitHub.
+      </p>
+      <p>
+        Demonstrated ability to work effectively both independently and as part of a collaborative team. Adept at applying object-oriented principles and data structures to solve programming challenges efficiently. Recently participated in workshops and certification programs focused on full-stack development, cloud computing, and generative AI, 
+        further strengthening technical and industry-relevant skills.
+      </p>
+      <p>
+      Actively seeking a software development internship to contribute to dynamic, 
+      agile teams and continue growing as a full-stack developer by applying both foundational knowledge and a strong willingness to learn in a fast-paced environment.
+      </p>
+    </section>
+
+    <!-- Skills section -->
+    <section class="skills" id="skills">
+      <h2 class="skill-header">My Top Skills</h2>
+
+      <div class="skills-wrapper">
+        <div class="first-set animate__animated animate__pulse">
+          <img
+            src="assets/icons/icons8-html-5.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="assets/icons/icons8-css3.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="assets/icons/icons8-javascript.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+        </div>
+
+        <div class="second-set animate__animated animate__pulse">
+          <img
+            src="assets/icons/icons8-bootstrap.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="assets/icons/icons8-react-native.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="assets/icons/icons8-git.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects section -->
+    <section class="projects" id="projects">
+      <h2 class="projects-title">Some of my Recent Projects</h2>
+      <div class="projects-container">
+        <div class="project-container project-card">
+          <img
+            src="assets/images/estlo.png"
+            alt="expense-tracker"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Estilo Gallery</h3>
+          <p class="project-details">
+            Designed and built a responsive art gallery website using HTML5, CSS3, and Bootstrap 5.
+          </p>
+          <a href="https://sanjeev215101.github.io/Estilo_ArtGallery/" target="_blank" class="project-link">Check it Out</a>
+        </div>
+        <div class="project-container project-card">
+          <img
+            src="assets/images/the big shot.jpg"
+            alt="netflic-clone"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">TheBigShot</h3>
+          <p class="project-details" >
+            Developed a database management system for a Local Snoker and pool club using Visual Basic as the front-end and MS Access as the back-end. The system handled member registration, game scheduling, and event tracking. 
+            Implemented CRUD operations for managing member profiles, game inventories, and attendance. Provided a user-friendly interface. 
+            
+          </p>
+          <a href="" target="_blank" class="project-link">Check it Out</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact section -->
+    <section class="contact" id="contact">
+      <h2>Get In Touch With Me</h2>
+      <div class="contact-form-container">
+        <div class="contact-form">
+          <form action="https://formspree.io/f/xyylnggw" method="POST">
+            <div class="form-control">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="sender-name"
+                placeholder="Enter Your Name"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="sender-email"
+                placeholder="Enter Your Email"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                cols="60"
+                rows="10"
+                placeholder="Enter Your Message"
+                name="message"
+                class="input-field"
+                required
+              ></textarea>
+            </div>
+            <input
+              type="submit"
+              value="Submit"
+              id="submit-btn"
+              class="submit-btn"
+            />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Social accounts - Fixed to the right -->
+    <div class="socials">
+      <a href="https://www.instagram.com/._mr.sanjeev._?igsh=anE4YXdsdzdqMXB1" target="_blank"
+        ><img
+          src="assets/icons/icons8-instagram.gif"
+          alt="Instagram"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a href="https://www.linkedin.com/in/sanjeev-bhardwaj-50043a28a/" target="_blank"
+        ><img
+          src="assets/icons/icons8-linkedin-circled.gif"
+          alt="Linkedin"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a href="https://github.com/Sanjeev215101" target="_blank"
+        ><img src="assets/icons/icons8-github.gif" alt="Github" class="socicon"
+      /></a>
+    </div>
+
+    <!-- Scroll to top -->
+    <i class="scroll-up" id="scroll-up"
+      ><img
+        src="assets/icons/icons8-upward-arrow.gif"
+        class="socicon up-arrow"
+        alt=""
+    /></i>
+
+    <!-- Footer section -->
+    <footer>
+      <p class="copy">&copy; Copyright 2021</p>
+      <p class="copy">
+        Built with &#x2661; by
+        <a href="https://github.com/Sanjeev215101" target="_blank"
+          >Sanjeev </a
+        >
+      </p>
+    </footer>
+
+    <!-- Website scripts -->
+    <script src="assets/js/app.js"></script>
+
+    <!-- Ion icons scripts -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
